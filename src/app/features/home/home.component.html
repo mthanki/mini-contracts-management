@@ -1,0 +1,30 @@
+<div class="home">
+    <div class="contract-summary">
+        <span>Total Contracts: {{ totalContracts }}</span>
+        <span>Total Value: {{ totalValue | currency }}</span>
+    </div>
+
+    <div class="contract-filters">
+        <mat-form-field appearance="outline">
+            <mat-label>Search by Title</mat-label>
+            <input matInput [(ngModel)]="searchTitle" (ngModelChange)="applyFilters()" placeholder="Title">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Filter by Status</mat-label>
+            <mat-select [(ngModel)]="filterStatus" (selectionChange)="applyFilters()">
+                <mat-option value="">All</mat-option>
+                <mat-option *ngFor="let status of statuses" [value]="status">{{ status }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Filter by Party</mat-label>
+            <mat-select [(ngModel)]="filterParty" (selectionChange)="applyFilters()">
+                <mat-option value="">All</mat-option>
+                <mat-option *ngFor="let party of parties" [value]="party">{{ party }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <app-contracts-table [contracts]="filteredContracts" (edit)="editContract($event)" (delete)="deleteContract($event)"
+        (detail)="openDetail($event)"></app-contracts-table>
+</div>

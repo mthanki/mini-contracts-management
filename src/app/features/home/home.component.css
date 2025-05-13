@@ -1,0 +1,38 @@
+/* Add styles for classes used in home.component.html */
+.home {
+    padding: 15px;
+}
+
+.contract-summary {
+    display: flex;
+    gap: 32px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contract-filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+/* Responsive: mobile/small tablet */
+@media (max-width: 900px) {
+    .home {
+        padding: 10px;
+    }
+
+    .contract-summary {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1em;
+    }
+
+    .contract-filters {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+}

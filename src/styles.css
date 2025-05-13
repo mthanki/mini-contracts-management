@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-toolbar,
+.mat-toolbar {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.custom-dialog-container {
+    height: 95%;
+}
+
+@media (max-width: 900px) {
+    table.mat-table {
+        /* display: block; */
+        overflow-x: auto;
+        width: 100vw;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}

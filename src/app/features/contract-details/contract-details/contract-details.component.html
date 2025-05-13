@@ -1,0 +1,20 @@
+<!-- Back button -->
+<button mat-button (click)="goBack()" class="back-btn">
+    <mat-icon>arrow_back</mat-icon>
+    Back
+</button>
+<mat-card *ngIf="contract$ | async as contract; else loading" style="background: transparent; box-shadow: none;">
+    <mat-card-header>
+        <mat-card-title>{{ contract.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p><strong>Party:</strong> {{ contract.party }}</p>
+        <p><strong>Status:</strong> {{ contract.status }}</p>
+        <p><strong>Start Date:</strong> {{ contract.startDate | date }}</p>
+        <p><strong>End Date:</strong> {{ contract.endDate | date }}</p>
+        <p><strong>Amount:</strong> {{ contract.amount | currency }}</p>
+    </mat-card-content>
+</mat-card>
+<ng-template #loading>
+    <p>Loading contract details...</p>
+</ng-template>

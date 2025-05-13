@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Website Redesign",
+        "party": "Acme Corp",
+        "status": "Active",
+        "startDate": "2024-05-01",
+        "endDate": "2024-07-01",
+        "amount": 12000
+    },
+    {
+        "id": 2,
+        "title": "Mobile App Development",
+        "party": "Beta LLC",
+        "status": "Pending",
+        "startDate": "2024-06-01",
+        "endDate": "2024-09-01",
+        "amount": 25000
+    },
+    {
+        "id": 3,
+        "title": "Consulting Services",
+        "party": "Gamma Inc",
+        "status": "Expired",
+        "startDate": "2023-01-01",
+        "endDate": "2023-12-31",
+        "amount": 8000
+    },
+    {
+        "id": 4,
+        "title": "Cloud Hosting Renewal",
+        "party": "Delta Hosting",
+        "status": "Active",
+        "startDate": "2025-01-01",
+        "endDate": "2025-05-20",
+        "amount": 5000
+    },
+    {
+        "id": 5,
+        "title": "SEO Optimization",
+        "party": "Epsilon SEO",
+        "status": "Active",
+        "startDate": "2025-03-01",
+        "endDate": "2025-06-10",
+        "amount": 3000
+    },
+    {
+        "id": 6,
+        "title": "Annual Maintenance",
+        "party": "Zeta Maintenance",
+        "status": "Active",
+        "startDate": "2024-06-01",
+        "endDate": "2025-06-05",
+        "amount": 7000
+    }
+]

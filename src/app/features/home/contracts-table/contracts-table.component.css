@@ -1,0 +1,44 @@
+th {
+    min-width: 150px;
+}
+
+.contracts-table-container {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.contract-link {
+    color: #1976d2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contract-link:hover {
+    text-decoration: none;
+}
+
+.expiring {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* Responsive: mobile/small tablet */
+@media (max-width: 900px) {
+    .mat-form-field {
+        width: 90% !important;
+        max-width: 100vw;
+    }
+
+    table.mat-table {
+        display: block;
+        overflow-x: scroll;
+        width: 100vw;
+        font-size: 0.98em;
+    }
+
+    .mat-header-cell,
+    .mat-cell {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+}

@@ -1,0 +1,25 @@
+.edit-contract-dialog {
+    padding: 15px;
+    /* Hide scrollbar for all browsers */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.edit-contract-dialog::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari/Webkit */
+}
+
+@media (max-width: 600px) {
+    .edit-contract-dialog {
+        padding: 6px;
+        max-width: 98vw;
+    }
+
+    .mat-form-field {
+        width: 100%;
+        min-width: 0;
+    }
+}

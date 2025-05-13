@@ -1,0 +1,61 @@
+/* Add some basic styling for contract details */
+:host {
+    display: block;
+    padding: 24px 16px;
+    max-width: 480px;
+    /* margin: 32px auto; */
+    background: #fafbfc;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08); */
+}
+
+h2 {
+    margin-top: 0;
+    color: #1976d2;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+strong {
+    color: #1976d2;
+    font-weight: 500;
+}
+
+.back-btn {
+    background: transparent !important;
+    color: #666 !important;
+    text-transform: none;
+    font-weight: 500;
+    /* margin-bottom: 0px; */
+    box-shadow: none !important;
+}
+
+.back-btn:hover {
+    color: #1976d2 !important;
+    text-decoration: underline;
+    background: transparent !important;
+}
+
+@media (max-width: 900px) {
+    :host {
+        padding: 12px 4px;
+        max-width: 98vw;
+        margin: 12px auto;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
